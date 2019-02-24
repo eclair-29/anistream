@@ -1,4 +1,41 @@
 // Base Styles
 @import "utils/main";
 
+// Component Styles
+@import "app/common/common";
+
 // Custom Overrides...
+body {
+  background: $bg !important;
+  overflow: hidden;
+}
+
+.icon-btn {
+  @include size(40px);
+  background: transparent !important;
+  border: none !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+
+  &:hover {
+    background: rgba($text-prime, 0.1) !important;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+// ...Scrollbar thumb vertical
+.thumb-vertical {
+  @include size(100%, auto);
+  position: relative;
+  display: block;
+  border-radius: 0 !important;
+  background: rgba($border, 0.8);
+
+  &:hover,
+  &:active {
+    background: $border;
+  }
+}

@@ -1,0 +1,129 @@
+// Related styles for this folder: ./common
+
+// Header/NavBar
+// ...
+header {
+  @include size(100%, 60px);
+  @include position(fixed, 0 null null 0);
+  z-index: 2;
+  background: rgba($bg-2, 0.275);
+
+  .navbar {
+    @include size(inherit);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .brand {
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    color: $text-secondary;
+    margin-top: 2.5px;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .menu {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    li {
+      padding-left: 25px;
+      margin-top: 2.5px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-left: 13px;
+        margin-top: 0;
+      }
+    }
+
+    a {
+      font-size: 0.8rem !important;
+      font-weight: 600 !important;
+      color: $text-prime;
+    }
+
+    .selected {
+      color: $accent;
+    }
+  }
+}
+
+// Search Module
+// ...
+.backdrop {
+  @include size(100vw, 100vh);
+  @include position(absolute, 0 null null 0);
+  background: $bg;
+  opacity: 0.75;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.search-module {
+  @include size(350px, 100vh);
+  @include position(absolute, 0 -350px null null);
+  z-index: 3;
+  background: $bg-3;
+  transition: right 0.3s ease-in-out;
+}
+
+// Search Module's Backdrop Fade transition
+// ...
+.backdrop-entering {
+  opacity: 0;
+}
+
+.backdrop-entered {
+  opacity: 0.5;
+}
+
+.backdrop-exiting {
+  opacity: 0.5;
+}
+
+.backdrop-exited {
+  opacity: 0;
+  pointer-events: none;
+}
+
+// Search Module Sliding Transition
+// ...
+.search-entering {
+  right: -350px;
+}
+
+.search-entered {
+  right: 0;
+}
+
+.search-exiting {
+  right: 0;
+}
+
+.search-exited {
+  right: -350px;
+}
+
+// Main Container
+// ...
+main {
+  @include size(100%);
+  @include position(absolute, 0 null null 0);
+  z-index: 1;
+  padding-top: 70px;
+  color: #fff;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
