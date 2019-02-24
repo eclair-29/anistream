@@ -7,9 +7,17 @@
 // Custom Wrapper (Optional Class: inject it and have a custom wrapper)
 .wrapper {
   width: 100%;
-  max-width: 720px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 // Put your custom variables and mixins here...
+// Dark Theme
+$bg: #121212;
+$bg-2: #272727;
+$bg-3: #1C1C1C;
+$text-prime: #f9f9f9;
+$text-secondary: #889e97;
+$border: #383838;
+$accent: #00b0ff;
