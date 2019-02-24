@@ -47,7 +47,7 @@ const NavBar = ({
         _backdrop and transition ready
         ...
       */}
-      <Transition timeout={100} in={isIn} appear>
+      <Transition timeout={100} in={isIn} appear mountOnEnter>
         {status => <div className={`backdrop backdrop-${status}`} onClick={hideOnClick} />}
       </Transition>
 
