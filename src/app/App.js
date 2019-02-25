@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Components
 import { NavBar, Main } from "./common";
 import { Home } from "./home";
+import { AnimeList } from "./animelist";
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
           <Main>
             <Switch>
               <Route path="/" exact component={Home} />
+              <Route path="/anime-list" component={AnimeList} />
             </Switch>
           </Main>
         </div>
