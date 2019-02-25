@@ -1,4 +1,6 @@
+import { compose } from "redux";
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 import NavBar from "./NavBar";
 import { commonOperations } from "./duck";
 
@@ -18,9 +20,12 @@ const mapDispatchToProps = dispatch => {
   }
 };
 
-const NavBarContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
+const NavBarContainer = compose(
+  withRouter,
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )
 )(NavBar);
 
 export default NavBarContainer;
