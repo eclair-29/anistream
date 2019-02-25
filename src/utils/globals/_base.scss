@@ -39,6 +39,10 @@ a {
   font-size: 0.75rem !important;
   font-weight: 500 !important;
   text-decoration: none !important;
+  
+  &:focus {
+    outline: none !important;
+  }
 }
 
 div,
