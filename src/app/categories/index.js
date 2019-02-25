@@ -1,0 +1,3 @@
+// app/categories/index.js
+// ...
+export { default as Categories } from "./CategoriesContainer";

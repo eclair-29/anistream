@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { NavBar, Main } from "./common";
 import { Home } from "./home";
 import { AnimeList } from "./animelist";
+import { Categories } from "./categories";
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/anime-list" component={AnimeList} />
+              <Route path="/categories" component={Categories} />
             </Switch>
           </Main>
         </div>
