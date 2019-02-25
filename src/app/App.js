@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import { NavBar, Main } from "./common";
+import { NavBar, Main } from "./layout";
 import { Home } from "./home";
 import { AnimeList } from "./animelist";
 import { Categories } from "./categories";
