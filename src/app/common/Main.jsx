@@ -1,5 +1,6 @@
 import React from "react";
 import { Scrollbars } from "react-custom-scrollbars";
+import PropTypes from "prop-types";
 
 const Main = ({ children }) => {
   return (
@@ -23,5 +24,9 @@ const Main = ({ children }) => {
     </main>
   );
 }
+
+Main.propTypes = {
+  children: PropTypes.node.isRequired
+};
 
 export default Main;
