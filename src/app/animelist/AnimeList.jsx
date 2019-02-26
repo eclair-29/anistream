@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Placeholder } from "../layout";
 
 class AnimeList extends Component {
   componentDidMount() {
@@ -7,7 +8,9 @@ class AnimeList extends Component {
 
   render() {
     return (
-      <div className="anime-list"><h1>Anime List Page</h1></div>
+      <div className="anime-list">
+        <Placeholder>Anime List</Placeholder>
+      </div>
     );
   }
 }

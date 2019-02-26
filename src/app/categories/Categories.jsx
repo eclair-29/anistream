@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Placeholder } from "../layout";
 
 class Categories extends Component {
   componentDidMount() {
@@ -7,7 +8,9 @@ class Categories extends Component {
 
   render() {
     return (
-      <div className="categories"><h1>Categories Page</h1></div>
+      <div className="categories">
+        <Placeholder>Categories</Placeholder>
+      </div>
     );
   }
 }

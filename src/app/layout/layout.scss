@@ -135,6 +135,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 25px;
 
   .copyright {
     color: $text-secondary;
@@ -168,5 +169,29 @@ main {
     text-align: center;
     font-size: 1rem !important;
     color: $text-secondary;
+  }
+}
+
+// Placeholder
+// ...
+.placeholder {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin: 0 0 25px 0 !important;
+    color: $text-prime !important;
+    text-align: center;
+    font-size: 1rem !important;
+  }
+
+  p {
+    width: 350px;
+    text-align: center;
+    color: $text-secondary;
+    padding-bottom: 75px;
   }
 }
