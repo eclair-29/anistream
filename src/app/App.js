@@ -6,6 +6,7 @@ import { NavBar, Main } from "./layout";
 import { Home } from "./home";
 import { AnimeList } from "./animelist";
 import { Categories } from "./categories";
+import { Page404 } from "./layout";
 
 class App extends Component {
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
               <Route path="/" exact component={Home} />
               <Route path="/anime-list" component={AnimeList} />
               <Route path="/categories" component={Categories} />
+              <Route component={Page404} />
             </Switch>
           </Main>
         </div>
