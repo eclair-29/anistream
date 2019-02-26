@@ -27,6 +27,7 @@ class App extends Component {
             MAIN CONTAINER
             _holds content for each views/pages
             _with react-router holder
+            _includes page 404 route as a fallback
             ...
           */}
           <Main>
