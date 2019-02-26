@@ -29,7 +29,7 @@ const NavBar = ({
         ...
       */}
       <nav className="navbar">
-        <Link to="/" className="brand">brand</Link>
+        <Link to="/" className="brand">animazing</Link>
 
         <ul className="menu">
           <li><NavLink to="/" exact activeClassName="selected">Home</NavLink></li>
