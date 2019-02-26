@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import { NavBar, Main } from "./layout";
+import { NavBar, Main, Footer, Page404 } from "./layout";
 import { Home } from "./home";
 import { AnimeList } from "./animelist";
 import { Categories } from "./categories";
-import { Page404 } from "./layout";
 
 class App extends Component {
   render() {
@@ -27,7 +26,7 @@ class App extends Component {
             MAIN CONTAINER
             _holds content for each views/pages
             _with react-router holder
-            _includes page 404 route as a fallback
+            _includes page 404 route as a fallbac
             ...
           */}
           <Main>
@@ -37,6 +36,14 @@ class App extends Component {
               <Route path="/categories" component={Categories} />
               <Route component={Page404} />
             </Switch>
+
+            {/*
+              ...
+              FOOTER LAYOUT
+              _holds footer layout (from: ./layout/Footer.jsx)
+              ...
+            */}
+            <Footer />
           </Main>
         </div>
       </Router>

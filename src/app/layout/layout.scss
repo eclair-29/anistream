@@ -128,6 +128,38 @@ main {
   }
 }
 
+// Footer
+// ...
+.footer {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .copyright {
+    color: $text-secondary;
+  }
+
+  .menu {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  li {
+    padding-left: 25px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    a {
+      color: $text-secondary
+    }
+  }
+}
+
 // Page 404
 // ...
 .page-404 {
