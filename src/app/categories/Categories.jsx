@@ -9,7 +9,7 @@ class Categories extends Component {
   render() {
     return (
       <div className="categories">
-        <Placeholder>Categories</Placeholder>
+
       </div>
     );
   }

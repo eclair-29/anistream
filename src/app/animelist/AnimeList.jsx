@@ -9,7 +9,7 @@ class AnimeList extends Component {
   render() {
     return (
       <div className="anime-list">
-        <Placeholder>Anime List</Placeholder>
+
       </div>
     );
   }
