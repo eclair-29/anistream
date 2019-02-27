@@ -12,7 +12,7 @@ const Footer = () => {
         _display the copyright infringement
         ...
       */}
-      <div className="copyright">&copy; {date.getFullYear()} Anistream Entertainment</div>
+      <div className="copyright">&copy; {date.getFullYear()} Animazing Entertainment</div>
 
       {/* 
         FOOTER MENU
@@ -20,7 +20,7 @@ const Footer = () => {
       */}
       <ul className="menu">
         <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact Anistream</Link></li>
+        <li><Link to="/contact">Contact Animazing</Link></li>
         <li><Link to="/privacy">Privacy</Link></li>
       </ul>
     </footer>
