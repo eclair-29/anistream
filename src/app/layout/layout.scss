@@ -177,30 +177,3 @@ main {
     margin-bottom: 150px;
   }
 }
-
-// Placeholder
-// ...
-.placeholder {
-  @include size(100%);
-  @include position(absolute, 0 null null 0);
-  background: $bg;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  h1 {
-    width: 350px;
-    margin: 0 0 25px 0 !important;
-    color: $text-prime !important;
-    font-size: 1rem !important;
-    text-align: left !important;
-    line-height: 25px;
-  }
-
-  p {
-    width: 350px;
-    padding-bottom: 100px;
-    color: $text-secondary;
-  }
-}
