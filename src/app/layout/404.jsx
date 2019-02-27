@@ -9,6 +9,12 @@ class Page404 extends Component {
   render() {
     return (
       <div className="page-404">
+        {/*
+          ...
+          PAGE 404 LAYOUT
+          _basic page 404 layout
+          ...
+        */}
         <Error404 />
       </div>
     );
