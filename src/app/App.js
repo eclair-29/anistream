@@ -43,7 +43,7 @@ class App extends Component {
               _holds footer layout (from: ./layout/Footer.jsx)
               ...
             */}
-            <Footer />
+            {/* <Footer /> */}
           </Main>
         </div>
       </Router>
