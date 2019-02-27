@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import { NavBar, Main, Footer, Page404 } from "./layout";
+import { NavBar, Main, Footer, Page404, Ads } from "./layout";
 import { Home } from "./home";
 import { AnimeList } from "./animelist";
 import { Categories } from "./categories";
@@ -41,9 +41,11 @@ class App extends Component {
               ...
               FOOTER LAYOUT
               _holds footer layout (from: ./layout/Footer.jsx)
+              _wide horizontal bottom ads placeholder
               ...
             */}
-            {/* <Footer /> */}
+            <Ads className="ads-large-leaderboard" />
+            <Footer />
           </Main>
         </div>
       </Router>

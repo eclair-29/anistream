@@ -160,6 +160,24 @@ main {
   }
 }
 
+// Ads
+// ...
+.ads {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("./utils/assets/ads_placeholder.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+  opacity: 0.75;
+}
+
+.ads-large-leaderboard {
+  @include size(100%, 90px);
+}
+
 // Page 404
 // ...
 .page-404 {
@@ -169,6 +187,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 
   svg {
     @include size(300px);
