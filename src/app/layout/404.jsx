@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ReactComponent as Error404 } from "../../utils/assets/404.svg";
 
 class Page404 extends Component {
   componentDidMount() {
@@ -8,7 +9,7 @@ class Page404 extends Component {
   render() {
     return (
       <div className="page-404">
-        <h1>Error 404: Page not found...</h1>
+        <Error404 />
       </div>
     );
   }

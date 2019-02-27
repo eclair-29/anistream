@@ -119,7 +119,7 @@ main {
   @include size(100%);
   @include position(absolute, 0 null null 0);
   z-index: 1;
-  padding-top: 70px;
+  padding-top: 60px;
   color: #fff;
 
   .wrapper {
@@ -163,16 +163,19 @@ main {
 // Page 404
 // ...
 .page-404 {
-  @include size(100%);
-  @include position(absolute, 0 null null 0);
+  @include size(100%, 100vh);
+  @include position(absolute, -60px null null 0);
   background: $bg;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  h1 {
-    text-align: center;
-    font-size: 1rem !important;
-    margin-bottom: 150px;
+  svg {
+    @include size(300px);
+    padding-bottom: 50px;
+    
+    path, polygon {
+      fill: $bg-2;
+    }
   }
 }
