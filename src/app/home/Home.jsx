@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Placeholder } from "../layout"
 
 class Home extends Component {
   componentDidMount() {
