@@ -7,7 +7,9 @@ class Page404 extends Component {
 
   render() {
     return (
-      <div className="page-404"><h1>Error 404: Page Not Found :[</h1></div>
+      <div className="page-404">
+        <h1>Error 404: Page not found...</h1>
+      </div>
     );
   }
 }

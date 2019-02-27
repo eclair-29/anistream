@@ -164,34 +164,42 @@ main {
 // Page 404
 // ...
 .page-404 {
+  @include size(100%);
+  @include position(absolute, 0 null null 0);
+  background: $bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   h1 {
-    margin: 50px 0;
     text-align: center;
     font-size: 1rem !important;
-    color: $text-secondary;
+    margin-bottom: 150px;
   }
 }
 
 // Placeholder
 // ...
 .placeholder {
-  height: 530px;
+  @include size(100%);
+  @include position(absolute, 0 null null 0);
+  background: $bg;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   h1 {
+    width: 350px;
     margin: 0 0 25px 0 !important;
     color: $text-prime !important;
-    text-align: center;
-    font-size: 1rem !important;
+    text-align: left !important;
+    line-height: 25px;
   }
 
   p {
     width: 350px;
-    text-align: center;
-    color: $text-secondary;
-    padding-bottom: 75px;
+    padding-bottom: 150px;
+    color: $text;
   }
 }
