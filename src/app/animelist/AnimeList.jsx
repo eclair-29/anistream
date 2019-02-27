@@ -3,7 +3,7 @@ import { Placeholder } from "../layout";
 
 class AnimeList extends Component {
   componentDidMount() {
-    document.title = `Anime List | ${document.title}`
+    document.title = "Anime List | Animazing"
   }
 
   render() {

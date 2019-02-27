@@ -3,7 +3,7 @@ import { Placeholder } from "../layout"
 
 class Home extends Component {
   componentDidMount() {
-    document.title = "Anistream";
+    document.title = "Animazing";
   }
 
   render() {

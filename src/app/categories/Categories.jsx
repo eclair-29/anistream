@@ -3,7 +3,7 @@ import { Placeholder } from "../layout";
 
 class Categories extends Component {
   componentDidMount() {
-    document.title = `Categories | ${document.title}`;
+    document.title = "Categories | Animazing";
   }
 
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Page404 extends Component {
   componentDidMount() {
-    document.title = `Page not found (Error 404) | ${document.title}`
+    document.title = "Page not found (Error 404) | Animazing"
   }
 
   render() {
