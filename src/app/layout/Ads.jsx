@@ -6,7 +6,7 @@ const Ads = (props) => {
   // ADS PLACEHOLDER
   // _a fallback conatainer in case the requested ads is not loaded
   // ...
-  return <div className={`ads ${props.className}`} />;
+  return <div className={`ads ads-${props.className}`} />;
 }
 
 Ads.propTypes = {

@@ -44,7 +44,7 @@ class App extends Component {
               _wide horizontal bottom ads placeholder
               ...
             */}
-            <Ads className="ads-large-leaderboard" />
+            <Ads className="large-leaderboard" />
             <Footer />
           </Main>
         </div>
