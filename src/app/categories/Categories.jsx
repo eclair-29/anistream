@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import common from "../../utils/config/common";
 
 class Categories extends Component {
   componentDidMount() {
-    document.title = "Categories | Animazing";
+    document.title = `Categories | ${common.docTitle}`;
   }
 
   render() {

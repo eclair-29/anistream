@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import common from "../../utils/config/common";
 
 class AnimeList extends Component {
   componentDidMount() {
-    document.title = "Anime List | Animazing";
+    document.title = `Anime List | ${common.docTitle}`;
     this.props.fetchAnimeList();
   }
 

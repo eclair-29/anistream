@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { ReactComponent as Error404 } from "../../utils/assets/404.svg";
+import common from "../../utils/config/common";
 
 class Page404 extends Component {
   componentDidMount() {
-    document.title = "Page not found (Error 404) | Animazing"
+    document.title = `Page not found (Error 404) | ${common.docTitle}`;
   }
 
   render() {
