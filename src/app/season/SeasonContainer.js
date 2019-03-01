@@ -1,11 +1,11 @@
 import { connect } from "react-redux";
-import { animeListOperations } from "./duck"
-import AnimeList from "./AnimeList";
+import { seasonOperations } from "./duck"
+import Season from "./Season";
 
 const mapStateToProps = state => {
   // array of anime data from the kitsu API
   return {
-    animeList: state.animeList.list
+    animeList: state.season.list
   }
 };
 
@@ -15,13 +15,13 @@ const mapStateToProps = state => {
 // ...
 const mapDispatchToProps = dispatch => {
   return {
-    fetchAnimeList: () => dispatch(animeListOperations.fetchAnimeList())
+    fetchAnimeList: () => dispatch(seasonOperations.fetchAnimeList())
   }
 };
 
-const AnimeListContainer = connect(
+const SeasonContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(AnimeList);
+)(Season);
 
-export default AnimeListContainer;
+export default SeasonContainer;

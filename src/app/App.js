@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Components
 import { NavBar, Main, Footer, Page404, Ads } from "./layout";
 import { Home } from "./home";
-import { AnimeList } from "./animelist";
+import { Season } from "./season";
 import { Categories } from "./categories";
 
 class App extends Component {
@@ -32,7 +32,7 @@ class App extends Component {
           <Main>
             <Switch>
               <Route path="/" exact component={Home} />
-              <Route path="/anime-list" component={AnimeList} />
+              <Route path="/season" component={Season} />
               <Route path="/categories" component={Categories} />
               <Route component={Page404} />
             </Switch>

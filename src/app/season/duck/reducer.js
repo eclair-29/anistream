@@ -6,7 +6,7 @@ const initialState = {
   list: []
 };
 
-const animeListReducer = (state = initialState, action) => {
+const seasonReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.REQUEST_ANIME_LIST_DATA:
       return {
@@ -18,4 +18,4 @@ const animeListReducer = (state = initialState, action) => {
   }
 };
 
-export default animeListReducer;
+export default seasonReducer;

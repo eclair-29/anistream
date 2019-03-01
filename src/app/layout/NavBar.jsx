@@ -33,7 +33,7 @@ const NavBar = ({
 
         <ul className="menu">
           <li><NavLink to="/" exact activeClassName="selected">Home</NavLink></li>
-          <li><NavLink to="/anime-list" activeClassName="selected">Anime List</NavLink></li>
+          <li><NavLink to="/season" activeClassName="selected">Season</NavLink></li>
           <li><NavLink to="/categories" activeClassName="selected">Categories</NavLink></li>
           <li><NavLink to="/get-app" activeClassName="selected">Get App</NavLink></li>
           <li>{searchBtn}</li>

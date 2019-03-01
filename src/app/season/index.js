@@ -1,0 +1,3 @@
+// app/animelist/index.js
+// ...
+export { default as Season } from "./SeasonContainer";
