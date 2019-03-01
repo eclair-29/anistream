@@ -137,7 +137,7 @@ main {
   align-items: center;
 
   .copyright {
-    color: $text-secondary;
+    color: shade($text-secondary, 20%);
   }
 
   .menu {
@@ -155,7 +155,7 @@ main {
     }
 
     a {
-      color: $text-secondary
+      color: shade($text-secondary, 20%);
     }
   }
 }
