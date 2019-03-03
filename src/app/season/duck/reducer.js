@@ -3,15 +3,15 @@
 import types from "./types";
 
 const initialState = {
-  list: []
+  seasonAnime: []
 };
 
 const seasonReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.REQUEST_ANIME_LIST_DATA:
+    case types.REQUEST_CURRENT_ANIME_SEASON:
       return {
         ...state,
-        list: action.payload
+        seasonAnime: action.payload
       }
 
     default: return state;

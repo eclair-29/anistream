@@ -3,19 +3,21 @@ import { seasonOperations } from "./duck"
 import Season from "./Season";
 
 const mapStateToProps = state => {
-  // array of anime data from the kitsu API
+  // array of current anime season from the kitsu API
   return {
-    animeList: state.season.list
+    seasonAnime: state.season.seasonAnime
   }
 };
 
 // ...
-// ANIME LIST REALTED ACTIONS:
-// _fetchAnimeList: get all anime from the kitsu API
+// SEASON ANIME RELATED ACTIONS:
+// _fetchCurrentAnimeSeason: get all anime from the current season
 // ...
 const mapDispatchToProps = dispatch => {
   return {
-    fetchAnimeList: () => dispatch(seasonOperations.fetchAnimeList())
+    fetchCurrentAnimeSeason: (season, year) => {
+      dispatch(seasonOperations.fetchCurrentAnimeSeason(season, year))
+    }
   }
 };
 

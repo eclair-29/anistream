@@ -2,13 +2,13 @@
 // ...
 import types from "./types";
 
-const requestAnimeListData = data => {
+const requestCurrentAnimeSeason = data => {
   return {
-    type: types.REQUEST_ANIME_LIST_DATA,
+    type: types.REQUEST_CURRENT_ANIME_SEASON,
     payload: data
   }
 };
 
 export default {
-  requestAnimeListData
+  requestCurrentAnimeSeason
 };
