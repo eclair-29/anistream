@@ -4,4 +4,16 @@
 // ...
 .home {
   padding: 25px 0;
+
+  .home-header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1rem !important;
+    text-transform: capitalize;
+    margin-bottom: 0 !important;
+  }
 }

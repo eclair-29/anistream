@@ -2,6 +2,19 @@
 
 // Anime List
 // ...
-.anime-list {
+.season {
   padding: 25px 0;
+
+  .season-header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1rem !important;
+    text-transform: capitalize;
+    margin-bottom: 0 !important;
+  }
 }

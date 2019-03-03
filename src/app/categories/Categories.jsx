@@ -9,7 +9,15 @@ class Categories extends Component {
   render() {
     return (
       <div className="categories">
-
+        {/*
+          ...
+          CATEGORIES PAGE HEADER
+          _title of the categories page
+          ...
+        */}
+        <div className="categories-header">
+          <h1 className="title">Categories</h1>
+        </div>
       </div>
     );
   }

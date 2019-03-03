@@ -9,7 +9,15 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-
+        {/*
+          ...
+          HOME PAGE HEADER
+          _title of the recently released anime
+          ...
+        */}
+        <div className="home-header">
+          <h1 className="title">Recently Released Anime</h1>
+        </div>
       </div>
     );
   }
