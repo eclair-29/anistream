@@ -8,13 +8,13 @@ const initialState = {
 
 const commonReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.SHOW_SEARCH_MODULE:
+    case types.SHOW_SLIDING_POPUP:
       return {
         ...state,
         isIn: true
       }
 
-    case types.HIDE_SEARCH_MODULE:
+    case types.HIDE_SLIDING_POPUP:
       return {
         ...state,
         isIn: false

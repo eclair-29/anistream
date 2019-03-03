@@ -1,24 +1,16 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Transition } from "react-transition-group";
 import { Search } from "react-feather";
 import { Button } from "reactstrap";
 import PropTypes from "prop-types";
+import { SlidingPopup } from "./"
 
-const NavBar = ({
-  isIn,
-  showSearchModule,
-  hideSearchModule
-}) => {
+const NavBar = ({ isIn, showSlidingPopup }) => {
   const searchBtn = (
-    <Button className="icon-btn" onClick={() => showSearchModule()}>
+    <Button className="icon-btn" onClick={() => showSlidingPopup()} title="Search" >
       <Search size="18px" color="#f9f9f9" />
     </Button>
   );
-
-  const hideOnClick = e => {
-    if (e.target.className === "backdrop backdrop-entered") hideSearchModule();
-  };
 
   return (
     <header>
@@ -43,26 +35,18 @@ const NavBar = ({
       {/* 
         ...
         SEARCH MODULE:
-        _search popup module with text input
+        _search popup module (from: SlidingPopup.jsx) with text input
         _auto suggest a list of anime depending on the query
-        _backdrop and transition ready
         ...
       */}
-      <Transition timeout={100} in={isIn} appear mountOnEnter>
-        {status => <div className={`backdrop backdrop-${status}`} onClick={hideOnClick} />}
-      </Transition>
-
-      <Transition timeout={100} in={isIn} appear>
-        {status => <div className={`search-module search-${status}`} />}
-      </Transition>
+      <SlidingPopup isIn={isIn} />
     </header>
   );
 }
 
 NavBar.propTypes = {
   isIn: PropTypes.bool.isRequired,
-  showSearchModule: PropTypes.func.isRequired,
-  hideSearchModule: PropTypes.func.isRequired
+  showSlidingPopup: PropTypes.func.isRequired,
 };
 
 export default NavBar;

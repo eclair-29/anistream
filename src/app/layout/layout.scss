@@ -47,9 +47,8 @@ header {
     }
 
     a {
-      font-size: 0.8rem !important;
-      font-weight: 600 !important;
       color: $text-prime;
+      font-weight: 600 !important;
     }
 
     .selected {
@@ -58,7 +57,7 @@ header {
   }
 }
 
-// Search Module
+// Sliding Popup Module
 // ...
 .backdrop {
   @include size(100vw, 100vh);
@@ -68,7 +67,7 @@ header {
   transition: opacity 0.3s ease-in-out;
 }
 
-.search-module {
+.sliding-module {
   @include size(350px, 100vh);
   @include position(absolute, 0 -350px null null);
   z-index: 3;
@@ -76,7 +75,7 @@ header {
   transition: right 0.3s ease-in-out;
 }
 
-// Search Module's Backdrop Fade transition
+// Sliding Popup's Backdrop Fade transition
 // ...
 .backdrop-entering {
   opacity: 0;
@@ -97,19 +96,19 @@ header {
 
 // Search Module Sliding Transition
 // ...
-.search-entering {
+.sliding-entering {
   right: -350px;
 }
 
-.search-entered {
+.sliding-entered {
   right: 0;
 }
 
-.search-exiting {
+.sliding-exiting {
   right: 0;
 }
 
-.search-exited {
+.sliding-exited {
   right: -350px;
 }
 
@@ -176,6 +175,18 @@ main {
 
 .ads-large-leaderboard {
   @include size(100%, 90px);
+}
+
+// Breadcrumbs
+// ...
+.breadcrumb {
+  background: transparent !important;
+  padding: 0 !important;
+
+  .active {
+    color: $text-prime !important;
+    text-transform: capitalize;
+  }
 }
 
 // Page 404

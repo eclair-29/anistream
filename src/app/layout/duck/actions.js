@@ -2,15 +2,15 @@
 // ...
 import types from "./types";
 
-const showSearchModule = () => {
-  return { type: types.SHOW_SEARCH_MODULE };
+const showSlidingPopup = () => {
+  return { type: types.SHOW_SLIDING_POPUP };
 };
 
-const hideSearchModule = () => {
-  return { type: types.HIDE_SEARCH_MODULE };
+const hideSlidingPopup = () => {
+  return { type: types.HIDE_SLIDING_POPUP };
 };
 
 export default {
-  showSearchModule,
-  hideSearchModule
+  showSlidingPopup,
+  hideSlidingPopup
 };

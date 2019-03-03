@@ -3,10 +3,10 @@
 import creators from "./actions";
 
 // Action Definition
-const showSearchModule = creators.showSearchModule;
-const hideSearchModule = creators.hideSearchModule;
+const showSlidingPopup = creators.showSlidingPopup;
+const hideSlidingPopup = creators.hideSlidingPopup;
 
 export default {
-  showSearchModule,
-  hideSearchModule
+  showSlidingPopup,
+  hideSlidingPopup
 };

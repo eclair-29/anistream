@@ -13,12 +13,11 @@ const mapStateToProps = state => {
 
 // ...
 // NAVBAR RELATED ACTIONS:
-// _SHOW_SEARCH_MODULE: toggle the search module pane hwne search button is cliecked
+// _SHOW_SLIDING_POPUP: toggle on the search module pane when search button is cliecked
 // ...
 const mapDispatchToProps = dispatch => {
   return {
-    showSearchModule: () => dispatch(commonOperations.showSearchModule()),
-    hideSearchModule: () => dispatch(commonOperations.hideSearchModule())
+    showSlidingPopup: () => dispatch(commonOperations.showSlidingPopup()),
   }
 };
 
