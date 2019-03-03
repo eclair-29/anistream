@@ -1,5 +1,6 @@
 // Font Family Import: Poppins
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600');
 
 // Base Styles
 * {
@@ -22,8 +23,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif !important;
-  font-weight: bold !important;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500 !important;
 }
 
 p {
